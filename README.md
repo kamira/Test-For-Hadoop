@@ -5,7 +5,7 @@ Test-For-Hadoop
 mkdir ${APP_DIR}
 cd ${APP_DIR}
 mkdir ${JAVA_APP_CLASS_DIR}
-javac -classpath ${HADOOP_HOME}/hadoop-0.20.2-core.jar -d ${JAVA_APP_CLASS_DIR} ${JAVA_APP_NAME}
+javac -classpath ${HADOOP_HOME}/hadoop-${HADOOP_VERSION}-core.jar -d ${JAVA_APP_CLASS_DIR} ${JAVA_APP_NAME}
 jar -cvf ${JAR_NAME} -C ${JAVA_CLASS_DIR} .
 ```
 
