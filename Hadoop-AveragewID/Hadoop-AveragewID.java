@@ -21,7 +21,7 @@ public class AveragewID {
       StringTokenizer tokenizer = new StringTokenizer(line);
       
       while (tokenizer.hasMoreTokens()) {
-        var[] str = tokenizer.nextToken().toString().split(":"));
+        String[] str = tokenizer.nextToken().toString().split(":"));
         output.collect(new Text(str[0]) , new Text(str[1] +":"));
       }
     }
